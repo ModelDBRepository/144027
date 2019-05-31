@@ -1,0 +1,54 @@
+# ---miscellaneous
+-frac_inh	0.2
+-neurons	10000
+-axons_e        2500 2500
+-axons_i        2500 2500
+-display	0 2 8000
+-seed		1
+
+# ---basic time parameters, including time constants.
+-dt		0.5
+-tmin		0
+-tmax		3
+-tau		10 10
+-tau_s		3 3
+
+# ---voltages
+-ureverse	0.0 -80
+-v_r		-65
+-v_t		-50
+
+# ---nonlinearity
+#-rho		.01 .01
+#-imax		2.0 2.0
+#-ihat		24 24
+#-deltai	8 8
+
+# ---current distribution
+-ia_mean	1.5	3.75	3.0
+-ia_sd		0.5	1.0	100.0
+-ia_min		-10	-10	0.5
+-ia_max		10	10	5.00
+-ia_p		0.75	0.25	-1.0
+
+# ---random component of weights
+-epsp		+0.48 +1.10
+-ipsp		-1.5  -1.5
+-dw		0.25
+
+# ---memories
+-no_mem		50
+-zap		3.14159
+-dzap		0.1
+-psprange	0.0 2.3
+-f		0.1
+-norm		1
+-nu_zap		600 600
+-t_zap		1 1.1
+-t_dzap		2 2.1
+-eps		.06
+-whozap		50
+
+# ---extra spike
+-t_extra	0.5
+-j_extra	0
